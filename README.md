@@ -1,0 +1,1 @@
+One-Shot Multicast DNS querier [RFC6762](https://datatracker.ietf.org/doc/html/rfc6762#section-5.1)

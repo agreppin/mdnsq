@@ -1,0 +1,48 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    { // using CodeLLDB extension
+      "name": "(lldb) mdnsq",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/mdnsq",
+      // "args": [ "_ssh._tcp.local." ],
+      // "args": [ "_ssh._tcp.local" ],
+      // "preLaunchTask": "make",
+      "terminal": "console", // DEBUG CONSOLE
+      "env": { "ASAN_OPTIONS": "detect_leaks=0" }
+    },
+    { // using CodeLLDB extension
+      "name": "(lldb) fuzzer",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/fuzzer",
+      "args": [ "misc/msg9k.bin" ],
+      "terminal": "console",
+      "env": { "ASAN_OPTIONS": "detect_leaks=0" }
+    },
+    { // using CodeLLDB extension
+      "name": "(lldb) genmsg",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/misc/genmsg",
+      "args": [ ],
+      "terminal": "console",
+      "env": { "ASAN_OPTIONS": "detect_leaks=0" }
+    },
+    {
+      "name": "(gdb) mdnsq",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/mdnsq",
+      "args": [ "-6" ],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "externalConsole": false,
+      "MIMode": "gdb"
+    }
+  ]
+}

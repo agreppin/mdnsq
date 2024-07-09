@@ -1,0 +1,22 @@
+{
+  "[c]":{
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+  },
+  "C_Cpp.files.exclude": {
+    "corpus": true,
+    "corpus_ref": true
+  },
+  "files.exclude": {
+    "corpus": true,
+  },
+  "files.watcherExclude": {
+    "corpus": true,
+    "corpus_ref": true
+  },
+  "search.exclude": {
+    "corpus": true,
+    "corpus_ref": true
+  }
+}
